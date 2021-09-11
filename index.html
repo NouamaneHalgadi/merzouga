@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merzouga</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+     <a href="#" class="logo">Merzouga</a>
+     <div class="toggle"></div>
+     <ul class="navigation">
+         <li> <a href="#home" class="active">Home</a></li>
+         <li> <a href="#about">About</a></li>
+         <li> <a href="#">Gallery</a></li>
+         <li> <a href="#">Tours</a></li>
+         <li> <a href="#contact">Contact</a></li>
+     </ul>
+    </header>
+    <section id="home">
+        <h2 id="text"><span>It's time to enjoy your vacation</span><br>Moroccan Desert</h2>
+        <img src="bird1.png" id="bird1">
+        <img src="bird2.png" id="bird2">
+        <img src="forest1.png" id="forest">
+        <img src="rocks1.png".png" id="rocks">
+        <a href="#" id="btn">Explore</a>
+        <img src="rocks2.png".png" id="rocks1">
+        <img src="water1.png".png" id="water">
+    </section>
+    <div id="about" class="sec">
+        <h2>Merzouga</h2>
+        <p>
+            Small village at the gates of the desert, Merzouga owes its fame to the high dunes of Erg Chebbi which extend to its edge. A Mecca for adventure tourism in Morocco, the dunes of Merzouga are a popular destination for travelers looking for a complete immersion in the heart of a desert environment as impressive as it is breathtaking. <br>
+            Located in the south-east of Morocco, 50 km from Erfoud, arriving at the village of Merzouga has a nice surprise in store for you. After crossing superb and varied landscapes, you are faced with an unforgettable panorama: the dunes of Erg Chebbi. Depending on your time of arrival, they will be draped in a yellow or ocher color that will change throughout the day. <br>
+            As soon as you arrive in Merzouga, you will immediately be immersed in another universe. The Saharouis, the famous blue men with indigo blue cheichs, welcome you. Camel drivers and their dromedaries too!
+        </p>
+        <h4>The Lgend Of Merzouga</h4>
+        <p>From time immemorial, the elders of the region have recounted the legend of Merzouga and the formation of Erg Chebbi. There she is : <br>
+
+            Long ago, the wealthy families of the village of Merzouga lived in wealth and behaved in an amoral manner. They washed their hands with milk and played with the food. One day at a party in the village, they refused to offer hospitality to a poor woman and her son. <br>
+            
+            Enraged by this behavior, God himself unleashed His wrath on these depraved families by triggering violent sandstorms. This divine punishment was of such force and ferocity that the village of Merzouga disappeared under high sand dunes. This is how the Erg Chebbi dune complex came into being.</p>
+    </div>
+     <!-- contact section -->
+    <div class="secs">
+        <div class="container">
+            <div class="contactInfo">
+                <div>
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <span><img src="location.png" alt=""></span>
+                            <span>8701 Bloc 55 <br>
+                                Ain Al Ati 1, Errachidia <br>
+                                52000
+                            </span>
+                        </li>
+                        <li>
+                            <span><img src="mail.png" alt=""></span>
+                            <span>Contact@Merzouga.com
+                            </span>
+                        </li>
+                        <li>
+                            <span><img src="call.png" alt=""></span>
+                            <span>+212-584952488
+                            </span>
+                        </li>
+
+                    </ul>
+                </div>
+                <ul class="sci">
+                    <li><a href="#"><img src="1.png" alt=""></a></li>
+                    <li><a href="#"><img src="2.png" alt=""></a></li>
+                    <li><a href="#"><img src="3.png" alt=""></a></li>
+                    <li><a href="#"><img src="4.png" alt=""></a></li>
+                    <li><a href="#"><img src="5.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div id="contact" class="contactForm">
+                <h2>Send a Message</h2>
+                <div class="formBox">
+                    <div class="inputBox w50">
+                        <input type="text" required>
+                        <span>First Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" required>
+                        <span>Last Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" required>
+                        <span>Email Address</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" required>
+                        <span>Phone Number</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <textarea required></textarea>
+                        <span>Wite Your Message Here ...</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <input type="Submit" value="send"> 
+                    </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+         <!-- Footer section -->
+         <div class="footer">
+            <p class="copyright"> COPYRIGHT 2021 © MERZOUGA -  WEBSITE DEVELOPED BY NOUAMANE HALGADI</p>
+        </div>
+
+    <script>
+     let text = document.getElementById('text');
+     let bird1 = document.getElementById('bird1');
+     let bird2 = document.getElementById('bird2');
+     let rocks1 = document.getElementById('rocks');
+     let btn = document.getElementById('btn') ;
+     let rocks2 = document.getElementById('rocks1');
+     let water1 = document.getElementById('water');
+     let forest1 = document.getElementById('forest');
+     let header = document.getElementById('header');
+
+     window.addEventListener('scroll', function(){
+         let value = window.scrollY;
+
+         text.style.top = 50 + value * -0.5 + '%';
+         bird1.style.top = value * - 1.5 + 'px';
+         bird1.style.left = value *  2 + 'px';
+         bird2.style.left = value * - 1.5 + 'px';
+         bird2.style.top = value * -1.5 + 'px';
+         btn.style.marginTop = value *  1.5 + 'px';
+         rocks.style.top = value *  -0.12 + 'px';
+         forest1.style.top = value *  0.25 + 'px';
+         header.style.top = value *  0.5 + 'px';
+     })
+
+     const toggleMenu = document.querySelector('.toggle');
+     const navigation = document.querySelector('.navigation');
+     toggleMenu.onclick = function(){
+         toggleMenu.classList.toggle('active');
+         navigation.classList.toggle('active');
+     }
+    </script>
+   
+
+
+    
+</body>
+</html>
